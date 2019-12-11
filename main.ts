@@ -110,7 +110,10 @@ let ball = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `, SpriteKind.Enemy)
-game.onUpdateInterval(5000, function () {
+game.onUpdate(function () {
     ball.y += controller.dx()
     ball.x += controller.dy()
+})
+game.onUpdateInterval(5000, function () {
+	
 })
